@@ -56,10 +56,11 @@ var decrement = amount-balance
 //(5points)
 class  SavingsAccount(var accountnumber:String, var accountname:String, var balance:Double, var withdrawals: Int){
     fun withdraw(){
-            if (withdrawals<=4){
-            withdrawals++
-                println("allows withdraw")
-            }
+                   if (withdrawals<4){
+            balance-=amount
+        }
+        println(balance)
+        withdrawals++
     }
 
 
