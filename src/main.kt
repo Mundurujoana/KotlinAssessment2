@@ -34,7 +34,7 @@ fun deposit(amount: Double){
     println(increment)
 
 }
-open fun withdraw(amount: Double){
+ fun withdraw(amount: Double){
 var decrement = amount-balance
     println(decrement)
 }
